@@ -120,3 +120,4 @@ STATIC_URL = 'static/'
 import os 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CHROMA_DB_PATH = BASE_DIR / "chroma_db"
