@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Search</title>
+</head>
+<body>
+    <h1>Search Your Knowledge Base</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="query" placeholder="Ask something..." style="width: 400px;" required>
+        <br><br>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

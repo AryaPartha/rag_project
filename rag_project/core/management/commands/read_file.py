@@ -68,7 +68,8 @@ class Command(BaseCommand):
         )
 
         collection = client.get_or_create_collection(
-            name="documents"
+        name="knowledge_base"
+
         )
 
         self.stdout.write(f"📂 ChromaDB path: {settings.CHROMA_DB_PATH}")

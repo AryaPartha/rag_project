@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Question:</h1>
+    <h3>{{ query }}</h3>
+
+    <hr>
+
+    <h2>🤖 AI Answer:</h2>
+    <div style="padding: 15px; border: 2px solid black; background: #f3f3f3;">
+        <p>{{ answer }}</p>
+    </div>
+
+    <hr>
+
+    <h2>📚 Retrieved Context Chunks:</h2>
+
+    {% for doc in documents %}
+        <div style="margin-bottom: 20px; padding: 10px; border: 1px solid gray;">
+            <pre>{{ doc }}</pre>
+        </div>
+    {% endfor %}
+
+    <br>
+    <a href="/search/">← New Search</a>
+</body>
+</html>
